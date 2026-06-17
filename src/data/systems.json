@@ -4,97 +4,111 @@
         "description": "Site Oficial do CDC",
         "url": "https://cdc.org.br/",
         "icon": "Globe",
-        "category": "Site Oficial"
+        "category": "Site Oficial",
+        "department": "Comunicação"
     },
     {
         "name": "Sistema de Transportes",
         "description": "Gestão de transporte",
         "url": "https://transportes.cdc.org.br",
         "icon": "Car",
-        "category": "Painéis de Monitoramento"
+        "category": "Painéis de Monitoramento",
+        "department": "Administrativo"
     },
     {
         "name": "Ponto Eletrônico",
         "description": "Acesso a informações e recursos para colaboradores",
         "url": "http://pontoeletronico.cdc.org.br/",
         "icon": "AlarmClock",
-        "category": "Painéis de Monitoramento"
+        "category": "Painéis de Monitoramento",
+        "department": "Recursos Humanos"
     },
     {
         "name": "Compras ONGSYS",
         "description": "Compras ONGSYS",
         "url": "https://erpcompras.cdc.org.br",
         "icon": "ScanBarcode",
-        "category": "Painéis de Monitoramento"
+        "category": "Painéis de Monitoramento",
+        "department": "Financeiro"
     },
     {
         "name": "OKDOC",
         "description": "Gestão de Documentos",
         "url": "https://digital.cdc.org.br",
         "icon": "FileText",
-        "category": "Sistemas"
+        "category": "Sistemas",
+        "department": "Administrativo"
     },
     {
         "name": "ONGSYS",
         "description": "Sistema de gestão administrativa e financeira para a ONG",
         "url": "https://www.ongsys.com.br/app/index.php/",
         "icon": "Building2",
-        "category": "Sistemas"
+        "category": "Sistemas",
+        "department": "Financeiro"
     },
     {
         "name": "Estoque",
         "description": "Sistema de estoque da ONG",
         "url": "https://estoque.cdc.org.br/",
         "icon": "Box",
-        "category": "Sistemas"
+        "category": "Sistemas",
+        "department": "Administrativo"
     },
     {
         "name": "MaxiFrota",
         "description": "Sistema de frota da ONG",
         "url": "https://novogis.maxifrota.com.br/login",
         "icon": "Car",
-        "category": "Sistemas"
+        "category": "Sistemas",
+        "department": "Administrativo"
     },
     {
         "name": "Cobli",
         "description": "Gestão de frota com rastreabilidade, monitoramento e relatórios detalhados.",
         "url": "https://painel.cobli.co/login",
         "icon": "Bus",
-        "category": "Sistemas"
+        "category": "Sistemas",
+        "department": "Administrativo"
     },
     {
         "name": "EZ Point",
         "description": "Sistema de ponto eletrônico",
         "url": "https://client2.ezpointweb.com.br/",
         "icon": "AlarmClock",
-        "category": "Sistemas"
+        "category": "Sistemas",
+        "department": "Recursos Humanos"
     },
     {
         "name": "KingHost",
         "description": "Envio de E-mail",
         "url": "https://painel.kinghost.com.br/index.php",
         "icon": "Mail",
-        "category": "Servidores"
+        "category": "Servidores",
+        "department": "TI"
     },
     {
         "name": "Hostinger",
         "description": "Hospedagem de sites",
         "url": "https://hpanel.hostinger.com/",
         "icon": "Server",
-        "category": "Servidores"
+        "category": "Servidores",
+        "department": "TI"
     },
     {
         "name": "Registro.br",
         "description": "Registro de domínios",
         "url": "https://registro.br/",
         "icon": "Globe",
-        "category": "Domínio"
+        "category": "Domínio",
+        "department": "TI"
     },
     {
         "name": "Cadastro dos Sistemas",
         "description": "Solicitação de cadastros dos sistemas",
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSfb0De_QY09xVPunhCEzpTZeV965EQt_Cmk4vL-WwgqzoaOpA/viewform?usp=sharing&ouid=103765690399295332532",
         "icon": "FilePlus",
-        "category": "Formulário"
+        "category": "Formulário",
+        "department": "Administrativo"
     }
 ]
