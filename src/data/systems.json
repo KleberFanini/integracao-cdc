@@ -1,0 +1,100 @@
+[
+    {
+        "name": "Site Oficial",
+        "description": "Site Oficial do CDC",
+        "url": "https://cdc.org.br/",
+        "icon": "Globe",
+        "category": "Site Oficial"
+    },
+    {
+        "name": "Sistema de Transportes",
+        "description": "Gestão de transporte",
+        "url": "https://transportes.cdc.org.br",
+        "icon": "Car",
+        "category": "Painéis de Monitoramento"
+    },
+    {
+        "name": "Ponto Eletrônico",
+        "description": "Acesso a informações e recursos para colaboradores",
+        "url": "http://pontoeletronico.cdc.org.br/",
+        "icon": "AlarmClock",
+        "category": "Painéis de Monitoramento"
+    },
+    {
+        "name": "Compras ONGSYS",
+        "description": "Compras ONGSYS",
+        "url": "https://erpcompras.cdc.org.br",
+        "icon": "ScanBarcode",
+        "category": "Painéis de Monitoramento"
+    },
+    {
+        "name": "OKDOC",
+        "description": "Gestão de Documentos",
+        "url": "https://digital.cdc.org.br",
+        "icon": "FileText",
+        "category": "Sistemas"
+    },
+    {
+        "name": "ONGSYS",
+        "description": "Sistema de gestão administrativa e financeira para a ONG",
+        "url": "https://www.ongsys.com.br/app/index.php/",
+        "icon": "Building2",
+        "category": "Sistemas"
+    },
+    {
+        "name": "Estoque",
+        "description": "Sistema de estoque da ONG",
+        "url": "https://estoque.cdc.org.br/",
+        "icon": "Box",
+        "category": "Sistemas"
+    },
+    {
+        "name": "MaxiFrota",
+        "description": "Sistema de frota da ONG",
+        "url": "https://novogis.maxifrota.com.br/login",
+        "icon": "Car",
+        "category": "Sistemas"
+    },
+    {
+        "name": "Cobli",
+        "description": "Gestão de frota com rastreabilidade, monitoramento e relatórios detalhados.",
+        "url": "https://painel.cobli.co/login",
+        "icon": "Bus",
+        "category": "Sistemas"
+    },
+    {
+        "name": "EZ Point",
+        "description": "Sistema de ponto eletrônico",
+        "url": "https://client2.ezpointweb.com.br/",
+        "icon": "AlarmClock",
+        "category": "Sistemas"
+    },
+    {
+        "name": "KingHost",
+        "description": "Envio de E-mail",
+        "url": "https://painel.kinghost.com.br/index.php",
+        "icon": "Mail",
+        "category": "Servidores"
+    },
+    {
+        "name": "Hostinger",
+        "description": "Hospedagem de sites",
+        "url": "https://hpanel.hostinger.com/",
+        "icon": "Server",
+        "category": "Servidores"
+    },
+    {
+        "name": "Registro.br",
+        "description": "Registro de domínios",
+        "url": "https://registro.br/",
+        "icon": "Globe",
+        "category": "Domínio"
+    },
+    {
+        "name": "Cadastro dos Sistemas",
+        "description": "Solicitação de cadastros dos sistemas",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSfb0De_QY09xVPunhCEzpTZeV965EQt_Cmk4vL-WwgqzoaOpA/viewform?usp=sharing&ouid=103765690399295332532",
+        "icon": "FilePlus",
+        "category": "Formulário"
+    }
+]

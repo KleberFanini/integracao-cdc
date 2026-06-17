@@ -1,26 +1,138 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Tema personalizado */
+@theme {
+  /* Cores Light Mode */
+  --color-background: #f5f4f2;
+  --color-foreground: #3d2e2a;
+  --color-card: #ffffff;
+  --color-card-foreground: #3d2e2a;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #3d2e2a;
+  --color-primary: #a63a34;
+  --color-primary-foreground: #fcf9f8;
+  --color-secondary: #f0ece8;
+  --color-secondary-foreground: #4a3a35;
+  --color-muted: #f0edea;
+  --color-muted-foreground: #80706a;
+  --color-accent: #d4a574;
+  --color-accent-foreground: #3d2e2a;
+  --color-destructive: #b5453a;
+  --color-destructive-foreground: #fcf9f8;
+  --color-border: #e5ded8;
+  --color-input: #ede7e2;
+  --color-ring: #b57a6a;
+
+  /* Cores da Marca CDC */
+  --color-brand-red: #8b2e2a;
+  --color-brand-orange: #c47c4a;
+  --color-brand-gold: #d4a574;
+  --color-brand-brown: #6b4c3a;
+  --color-surface: #f5f4f2;
+
+  /* Raio */
+  --radius: 0.875rem;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  /* Sombras */
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.04), 0 8px 24px -12px rgba(0, 0, 0, 0.10);
+  --shadow-card-hover: 0 6px 14px -4px rgba(139, 46, 42, 0.25), 0 20px 40px -16px rgba(0, 0, 0, 0.18);
+  --shadow-soft: 0 1px 3px rgba(0, 0, 0, 0.05);
+
+  /* Gradientes */
+  --gradient-brand: linear-gradient(135deg, #ef4444 0%, #ea580c 50%, #dc2626 100%);
+  --gradient-hero: radial-gradient(60% 80% at 50% 0%, rgba(212, 165, 116, 0.22) 0%, transparent 70%);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
+/* Dark Mode - usando prefers-color-scheme */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --color-background: #12121e;
+    --color-foreground: #fbfbfe;
+    --color-card: #1e1e32;
+    --color-card-foreground: #fbfbfe;
+    --color-popover: #1e1e32;
+    --color-popover-foreground: #fbfbfe;
+    --color-primary: #d6d6f0;
+    --color-primary-foreground: #1e1e32;
+    --color-secondary: #2d2d4a;
+    --color-secondary-foreground: #fbfbfe;
+    --color-muted: #2d2d4a;
+    --color-muted-foreground: #a8a8c8;
+    --color-accent: #2d2d4a;
+    --color-accent-foreground: #fbfbfe;
+    --color-destructive: #b5453a;
+    --color-destructive-foreground: #fbfbfe;
+    --color-border: rgba(255, 255, 255, 0.1);
+    --color-input: rgba(255, 255, 255, 0.15);
+    --color-ring: #7a7ab5;
+
+    --gradient-hero: radial-gradient(60% 80% at 50% 0%, rgba(212, 165, 116, 0.08) 0%, transparent 70%);
+    --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.2), 0 8px 24px -12px rgba(0, 0, 0, 0.4);
+    --shadow-card-hover: 0 6px 14px -4px rgba(139, 46, 42, 0.15), 0 20px 40px -16px rgba(0, 0, 0, 0.3);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Estilos base */
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Animações */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Classes utilitárias personalizadas */
+@layer utilities {
+  .bg-gradient-brand {
+    background-image: var(--gradient-brand);
+  }
+
+  .bg-gradient-hero {
+    background-image: var(--gradient-hero);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-card-hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .animation-fade-in {
+    animation: fade-in 0.5s ease-out both;
+  }
+
+  .font-display {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  .font-sans {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
 }
