@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
 import {
   Search,
   Wallet,
@@ -24,6 +24,8 @@ import {
   FilePlus,
   Box,
   ScanBarcode,
+  Moon,
+  Sun,
   type LucideIcon,
 } from "lucide-react";
 import systemsData from "@/data/systems.json";
@@ -91,7 +93,36 @@ const departmentEmojis: Record<string, string> = {
 export default function Home() {
   const [query, setQuery] = useState("");
   const [activeDepartment, setActiveDepartment] = useState("Todos");
+  const [isDark, setIsDark] = useState(false);
   const systems = systemsData as System[];
+
+  // Inicializar tema do localStorage ou preferência do sistema
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
+      setIsDark(true);
+      document.documentElement.classList.add("dark");
+    } else {
+      setIsDark(false);
+      document.documentElement.classList.remove("dark");
+    }
+  }, []);
+
+  // Alternar tema
+  const toggleTheme = () => {
+    const newIsDark = !isDark;
+    setIsDark(newIsDark);
+
+    if (newIsDark) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  };
 
   const filtered = useMemo(() => {
     let result = systems;
@@ -130,6 +161,19 @@ export default function Home() {
 
   return (
     <div className="relative min-h-screen bg-background font-sans text-foreground">
+      {/* Botão de Tema - Canto Superior Direito */}
+      <button
+        onClick={toggleTheme}
+        className="fixed top-4 right-4 z-50 p-3 rounded-full bg-card border border-border shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--brand-orange)]"
+        aria-label="Alternar tema"
+      >
+        {isDark ? (
+          <Sun className="h-5 w-5 text-yellow-400" />
+        ) : (
+          <Moon className="h-5 w-5 text-slate-700" />
+        )}
+      </button>
+
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 top-0 h-[520px]"
@@ -148,12 +192,14 @@ export default function Home() {
             />
           </div>
 
-          <div className="flex items-center justify-center gap-2 rounded-full border border-border bg-card/70 px-8 py-1 text-xs font-medium text-muted-foreground backdrop-blur">
-            <span
-              className="h-3 w-3 rounded-full"
-              style={{ background: "var(--brand-orange)" }}
-            />
-            <p className="font-bold">Centro de Desenvolvimento e Cidadania</p>
+          <div className="mt-5 flex justify-center">
+            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card/70 px-6 py-1.5 text-xs font-medium backdrop-blur">
+              <span
+                className="h-2.5 w-2.5 rounded-full shrink-0"
+                style={{ background: "var(--brand-orange)" }}
+              />
+              <span className="font-semibold text-foreground/80">Centro de Desenvolvimento e Cidadania</span>
+            </div>
           </div>
 
           <h1 className="mt-5 font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">

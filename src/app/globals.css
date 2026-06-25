@@ -1,41 +1,37 @@
 @import "tailwindcss";
 
-/* Tema personalizado */
-@theme {
+/* Variáveis CSS raiz - Light Mode */
+:root {
   /* Cores Light Mode */
-  --color-background: #f5f4f2;
-  --color-foreground: #3d2e2a;
-  --color-card: #ffffff;
-  --color-card-foreground: #3d2e2a;
-  --color-popover: #ffffff;
-  --color-popover-foreground: #3d2e2a;
-  --color-primary: #a63a34;
-  --color-primary-foreground: #fcf9f8;
-  --color-secondary: #f0ece8;
-  --color-secondary-foreground: #4a3a35;
-  --color-muted: #f0edea;
-  --color-muted-foreground: #80706a;
-  --color-accent: #d4a574;
-  --color-accent-foreground: #3d2e2a;
-  --color-destructive: #b5453a;
-  --color-destructive-foreground: #fcf9f8;
-  --color-border: #e5ded8;
-  --color-input: #ede7e2;
-  --color-ring: #b57a6a;
+  --background: #f5f4f2;
+  --foreground: #3d2e2a;
+  --card: #ffffff;
+  --card-foreground: #3d2e2a;
+  --popover: #ffffff;
+  --popover-foreground: #3d2e2a;
+  --primary: #a63a34;
+  --primary-foreground: #fcf9f8;
+  --secondary: #f0ece8;
+  --secondary-foreground: #4a3a35;
+  --muted: #f0edea;
+  --muted-foreground: #80706a;
+  --accent: #d4a574;
+  --accent-foreground: #3d2e2a;
+  --destructive: #b5453a;
+  --destructive-foreground: #fcf9f8;
+  --border: #e5ded8;
+  --input: #ede7e2;
+  --ring: #b57a6a;
 
   /* Cores da Marca CDC */
-  --color-brand-red: #8b2e2a;
-  --color-brand-orange: #c47c4a;
-  --color-brand-gold: #d4a574;
-  --color-brand-brown: #6b4c3a;
-  --color-surface: #f5f4f2;
+  --brand-red: #8b2e2a;
+  --brand-orange: #c47c4a;
+  --brand-gold: #d4a574;
+  --brand-brown: #6b4c3a;
+  --surface: #f5f4f2;
 
   /* Raio */
   --radius: 0.875rem;
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
 
   /* Sombras */
   --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.04), 0 8px 24px -12px rgba(0, 0, 0, 0.10);
@@ -47,45 +43,78 @@
   --gradient-hero: radial-gradient(60% 80% at 50% 0%, rgba(212, 165, 116, 0.22) 0%, transparent 70%);
 }
 
-/* Dark Mode - usando prefers-color-scheme */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: #12121e;
-    --color-foreground: #fbfbfe;
-    --color-card: #1e1e32;
-    --color-card-foreground: #fbfbfe;
-    --color-popover: #1e1e32;
-    --color-popover-foreground: #fbfbfe;
-    --color-primary: #d6d6f0;
-    --color-primary-foreground: #1e1e32;
-    --color-secondary: #2d2d4a;
-    --color-secondary-foreground: #fbfbfe;
-    --color-muted: #2d2d4a;
-    --color-muted-foreground: #a8a8c8;
-    --color-accent: #2d2d4a;
-    --color-accent-foreground: #fbfbfe;
-    --color-destructive: #b5453a;
-    --color-destructive-foreground: #fbfbfe;
-    --color-border: rgba(255, 255, 255, 0.1);
-    --color-input: rgba(255, 255, 255, 0.15);
-    --color-ring: #7a7ab5;
+/* Dark Mode - usando a classe .dark no HTML */
+.dark {
+  --background: #12121e;
+  --foreground: #fbfbfe;
+  --card: #1e1e32;
+  --card-foreground: #fbfbfe;
+  --popover: #1e1e32;
+  --popover-foreground: #fbfbfe;
+  --primary: #d6d6f0;
+  --primary-foreground: #1e1e32;
+  --secondary: #2d2d4a;
+  --secondary-foreground: #fbfbfe;
+  --muted: #2d2d4a;
+  --muted-foreground: #a8a8c8;
+  --accent: #2d2d4a;
+  --accent-foreground: #fbfbfe;
+  --destructive: #b5453a;
+  --destructive-foreground: #fbfbfe;
+  --border: rgba(255, 255, 255, 0.1);
+  --input: rgba(255, 255, 255, 0.15);
+  --ring: #7a7ab5;
 
-    --gradient-hero: radial-gradient(60% 80% at 50% 0%, rgba(212, 165, 116, 0.08) 0%, transparent 70%);
-    --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.2), 0 8px 24px -12px rgba(0, 0, 0, 0.4);
-    --shadow-card-hover: 0 6px 14px -4px rgba(139, 46, 42, 0.15), 0 20px 40px -16px rgba(0, 0, 0, 0.3);
-  }
+  --gradient-hero: radial-gradient(60% 80% at 50% 0%, rgba(212, 165, 116, 0.08) 0%, transparent 70%);
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.2), 0 8px 24px -12px rgba(0, 0, 0, 0.4);
+  --shadow-card-hover: 0 6px 14px -4px rgba(139, 46, 42, 0.15), 0 20px 40px -16px rgba(0, 0, 0, 0.3);
+}
+
+/* Registra as cores no @theme para o Tailwind usar */
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-brand-red: var(--brand-red);
+  --color-brand-orange: var(--brand-orange);
+  --color-brand-gold: var(--brand-gold);
+  --color-brand-brown: var(--brand-brown);
+  --color-surface: var(--surface);
+
+  --shadow-card: var(--shadow-card);
+  --shadow-card-hover: var(--shadow-card-hover);
+  --shadow-soft: var(--shadow-soft);
+  --gradient-brand: var(--gradient-brand);
+  --gradient-hero: var(--gradient-hero);
 }
 
 /* Estilos base */
 @layer base {
   * {
-    border-color: var(--color-border);
+    border-color: var(--border);
   }
 
   body {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
+    background-color: var(--background);
+    color: var(--foreground);
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   /* Animações */
