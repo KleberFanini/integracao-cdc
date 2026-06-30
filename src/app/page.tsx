@@ -26,7 +26,13 @@ import {
   ScanBarcode,
   Moon,
   Sun,
+  Activity,
   type LucideIcon,
+  Ticket,
+  BriefcaseMedical,
+  Stethoscope,
+  ShieldCheck,
+  Briefcase,
 } from "lucide-react";
 import systemsData from "@/data/systems.json";
 import Image from "next/image";
@@ -51,6 +57,12 @@ const iconMap: Record<string, LucideIcon> = {
   FilePlus,
   Box,
   ScanBarcode,
+  Activity,
+  Ticket,
+  BriefcaseMedical,
+  Stethoscope,
+  ShieldCheck,
+  Briefcase,
 };
 
 type System = {

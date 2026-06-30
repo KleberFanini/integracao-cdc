@@ -110,5 +110,85 @@
         "icon": "FilePlus",
         "category": "Formulário",
         "department": "Administrativo"
+    },
+    {
+        "name": "Sistema GAMBOA",
+        "description": "Sistema de gestão de projetos sociais para controle de metas, atividades e relatórios de impacto.",
+        "url": "https://www.sciweb.com.br/",
+        "icon": "Activity",
+        "category": "Sistemas",
+        "department": "Recursos Humanos"
+    },
+    {
+        "name": "SESI Viva+",
+        "description": "Plataforma de benefícios para colaboradores com acesso a saúde, bem-estar e serviços",
+        "url": "https://www.sesivivamais.com.br/smais",
+        "icon": "Wallet",
+        "category": "Benefícios",
+        "department": "Recursos Humanos"
+    },
+    {
+        "name": "Vale Transporte Recife",
+        "description": "Sistema de solicitação e recarga do vale transporte para colaboradores na região metropolitana do Recife.",
+        "url": "https://virtual.granderecife.pe.gov.br/login/?next=/recarga-vem-trabalhador/solicitar-agora/",
+        "icon": "Bus",
+        "category": "Benefícios",
+        "department": "Recursos Humanos"
+    },
+    {
+        "name": "Vale Transporte Caruaru (LEVA)",
+        "description": "Sistema de gestão e solicitação do vale transporte para colaboradores em Caruaru e região.",
+        "url": "https://max00173.itstransdata.com/TDMaxwebcommerce/",
+        "icon": "Bus",
+        "category": "Benefícios",
+        "department": "Recursos Humanos"
+    },
+    {
+        "name": "Vale Alimentação",
+        "description": "Portal do cartão de alimentação para gestão de saldo e recarga do benefício.",
+        "url": "https://auth.caju.com.br/realms/caju/protocol/openid-connect/auth?client_id=sponsor-app&redirect_uri=https%3A%2F%2Fempresa.caju.com.br%2Flogin%2F%23%3F&state=196d46bc-fcb3-47cb-805d-0f4760d52798&response_mode=fragment&response_type=code&scope=openid&nonce=920c47cd-c7d4-4018-851f-300f340e1900&code_challenge=QGehDeKS4khadkdMS-FERTCRJUa1RvDLPtn1it8hkZU&code_challenge_method=S256",
+        "icon": "Ticket",
+        "category": "Benefícios",
+        "department": "Recursos Humanos"
+    },
+    {
+        "name": "Plano de Saúde (Bradesco)",
+        "description": "Portal do plano de saúde para consulta de rede credenciada, guias e informações.",
+        "url": "https://wwws.bradescosaude.com.br/PCBS-LoginSaude/td/inicioLoginEmpresaSaude.do",
+        "icon": "LifeBuoy",
+        "category": "Saúde",
+        "department": "Recursos Humanos"
+    },
+    {
+        "name": "Plano de Saúde (Hapvida)",
+        "description": "Acesso ao plano de saúde com informações sobre rede de atendimento e serviços.",
+        "url": "https://www2.hapvida.com.br/empresas",
+        "icon": "BriefcaseMedical",
+        "category": "Saúde",
+        "department": "Recursos Humanos"
+    },
+    {
+        "name": "Plano Odontológico",
+        "description": "Cartão odontológico com acesso a rede de profissionais e procedimentos cobertos.",
+        "url": "https://cliente.portoseguro.com.br/auth/login?_gl=1*1pwl6ga*_gcl_aw*R0NMLjE3ODIxNTc3MzEuQ2p3S0NBand1dVBSQmhBbkVpd0EySmk4ZW5faDNSSFhlbzQ3RU92dUQwY3ZMWWFJOENOdGFTUjBFRmYzUzNpRUhIMFRlOURCcGF1V3J4b0M4Sm9RQXZEX0J3RQ..*_gcl_au*NTUyNjk2NDAwLjE3ODIxNTc3MzE.*_ga*MTk4ODEwNjg2My4xNzgyMTU3NzMx*_ga_S9FTJ8D526*czE3ODIxNTc3MzAkbzEkZzEkdDE3ODIxNTc3NDgkajQyJGwwJGgw",
+        "icon": "Stethoscope",
+        "category": "Saúde",
+        "department": "Recursos Humanos"
+    },
+    {
+        "name": "Seguro de Vida",
+        "description": "Portal do seguro de vida para consulta de cobertura, declarações e informações.",
+        "url": "https://vidaweb.sulamerica.com.br/#/",
+        "icon": "ShieldCheck",
+        "category": "Benefícios",
+        "department": "Recursos Humanos"
+    },
+    {
+        "name": "CIEE",
+        "description": "Portal para gestão de estágios e programas de aprendizagem com controle de vagas e documentos.",
+        "url": "https://cieepe.org.br/empresa/",
+        "icon": "Briefcase",
+        "category": "Sistemas",
+        "department": "Recursos Humanos"
     }
 ]
