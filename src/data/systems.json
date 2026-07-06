@@ -13,7 +13,7 @@
         "url": "https://transportes.cdc.org.br",
         "icon": "Car",
         "category": "Painéis de Monitoramento",
-        "department": "Administrativo"
+        "department": "TI"
     },
     {
         "name": "Ponto Eletrônico",
@@ -21,7 +21,7 @@
         "url": "http://pontoeletronico.cdc.org.br/",
         "icon": "AlarmClock",
         "category": "Painéis de Monitoramento",
-        "department": "Recursos Humanos"
+        "department": "TI"
     },
     {
         "name": "Compras ONGSYS",
@@ -29,7 +29,7 @@
         "url": "https://erpcompras.cdc.org.br",
         "icon": "ScanBarcode",
         "category": "Painéis de Monitoramento",
-        "department": "Financeiro"
+        "department": "TI"
     },
     {
         "name": "OKDOC",
@@ -109,7 +109,7 @@
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSfb0De_QY09xVPunhCEzpTZeV965EQt_Cmk4vL-WwgqzoaOpA/viewform?usp=sharing&ouid=103765690399295332532",
         "icon": "FilePlus",
         "category": "Formulário",
-        "department": "Administrativo"
+        "department": "TI"
     },
     {
         "name": "Sistema GAMBOA",
@@ -189,6 +189,86 @@
         "url": "https://cieepe.org.br/empresa/",
         "icon": "Briefcase",
         "category": "Sistemas",
+        "department": "Recursos Humanos"
+    },
+    {
+        "name": "Drive da Identidade Visual",
+        "description": "Acesso aos arquivos e recursos visuais da identidade do CDC.",
+        "url": "https://drive.google.com/drive/folders/1VSzdepwJ6zQgqiPweuu8WI7sBzIFHLes",
+        "icon": "Eye",
+        "category": "Sistemas",
+        "department": "Comunicação"
+    },
+    {
+        "name": "Espaço CDC",
+        "description": "Informações gerais sobre o Espaço CDC.",
+        "url": "https://sites.google.com/cdc.org.br/espaco-cdc/in%C3%ADcio",
+        "icon": "House",
+        "category": "Sistemas",
+        "department": "Comunicação"
+    },
+    {
+        "name": "Console Google Cloud",
+        "description": "Console Google Cloud",
+        "url": "https://console.cloud.google.com/welcome?_gl=1*ccgqcs*_up*MQ..*_gs*MQ..&gclid=CjwKCAjwpK3SBhASEiwAtV1SPOB3YzzyeeHj2OePH8sTi8hYFwGoygD--c1mh4vWDN0ea-N2Q1A4uBoCyTgQAvD_BwE&gclsrc=aw.ds&authuser=2&pli=1&rapt=AEjHL4N3qcnAvJuAyPCBXNi31tR8yKl192Ju8c0q1Lcjkk71PmyKpg6TC2IMBdkMEU5YH95mlutLRhSn_IIF8u8BDoxMHoKB7OJBY-Q8j0_cY6R0bQs1XbA&project=cdc-org",
+        "icon": "Cloud",
+        "category": "Sistemas",
+        "department": "TI"
+    },
+    {
+        "name": "Gestão de Demandas",
+        "description": "Gestão de demandas de TI",
+        "url": "https://cdc56896.monday.com/boards/18396184206",
+        "icon": "ClipboardList",
+        "category": "Sistemas",
+        "department": "TI"
+    },
+    {
+        "name": "Formulário do Monday",
+        "description": "Formulário de solicitações de sistemas",
+        "url": "https://wkf.ms/4cI1hYr",
+        "icon": "FileSpreadsheet",
+        "category": "Formulário",
+        "department": "TI"
+    },
+    {
+        "name": "Instagram",
+        "description": "Página do CDC no Instagram",
+        "url": "https://www.instagram.com/cdc_osc/",
+        "icon": "MessagesSquare",
+        "category": "Redes Sociais",
+        "department": "Comunicação"
+    },
+    {
+        "name": "Facebook",
+        "description": "Página do CDC no Facebook",
+        "url": "https://www.facebook.com/cdc.osc",
+        "icon": "MessagesSquare",
+        "category": "Redes Sociais",
+        "department": "Comunicação"
+    },
+    {
+        "name": "Youtube",
+        "description": "Canal do CDC no Youtube",
+        "url": "https://www.youtube.com/@cdc_osc",
+        "icon": "MessagesSquare",
+        "category": "Redes Sociais",
+        "department": "Comunicação"
+    },
+    {
+        "name": "LinkedIn",
+        "description": "Página do CDC no LinkedIn",
+        "url": "https://www.linkedin.com/company/centro-de-desenvolvimento-e-cidadania/",
+        "icon": "MessagesSquare",
+        "category": "Redes Sociais",
+        "department": "Comunicação"
+    },
+    {
+        "name": "Rede Educa",
+        "description": "Plataforma Rede Educa",
+        "url": "https://educa.cdc.org.br/",
+        "icon": "School",
+        "category": "Educação",
         "department": "Recursos Humanos"
     }
 ]

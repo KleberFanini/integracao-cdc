@@ -33,6 +33,13 @@ import {
   Stethoscope,
   ShieldCheck,
   Briefcase,
+  ClipboardList,
+  FileSpreadsheet,
+  Cloud,
+  Eye,
+  House,
+  MessagesSquare,
+  School
 } from "lucide-react";
 import systemsData from "@/data/systems.json";
 import Image from "next/image";
@@ -63,6 +70,13 @@ const iconMap: Record<string, LucideIcon> = {
   Stethoscope,
   ShieldCheck,
   Briefcase,
+  ClipboardList,
+  FileSpreadsheet,
+  Cloud,
+  Eye,
+  House,
+  MessagesSquare,
+  School
 };
 
 type System = {
