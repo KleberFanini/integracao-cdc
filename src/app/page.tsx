@@ -95,7 +95,9 @@ const DEPARTMENTS = [
   "Financeiro",
   "Recursos Humanos",
   "Comunicação",
-  "TI"
+  "TI",
+  "Monitoramento",
+  "Educa"
 ];
 
 // Cores por departamento
@@ -105,6 +107,8 @@ const departmentColors: Record<string, string> = {
   "Recursos Humanos": "#7c3aed",
   "Comunicação": "#f59e0b",
   "TI": "#dc2626",
+  "Monitoramento": "#065f46",
+  "Educa": "#991b1b",
 };
 
 // Emojis por departamento
@@ -114,6 +118,8 @@ const departmentEmojis: Record<string, string> = {
   "Recursos Humanos": "👥",
   "Comunicação": "📢",
   "TI": "💻",
+  "Monitoramento": "📊",
+  "Educa": "🎓",
 };
 
 export default function Home() {

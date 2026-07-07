@@ -13,7 +13,7 @@
         "url": "https://transportes.cdc.org.br",
         "icon": "Car",
         "category": "Painéis de Monitoramento",
-        "department": "TI"
+        "department": "Monitoramento"
     },
     {
         "name": "Ponto Eletrônico",
@@ -21,7 +21,7 @@
         "url": "http://pontoeletronico.cdc.org.br/",
         "icon": "AlarmClock",
         "category": "Painéis de Monitoramento",
-        "department": "TI"
+        "department": "Monitoramento"
     },
     {
         "name": "Compras ONGSYS",
@@ -53,7 +53,7 @@
         "url": "https://estoque.cdc.org.br/",
         "icon": "Box",
         "category": "Sistemas",
-        "department": "Administrativo"
+        "department": "Monitoramento"
     },
     {
         "name": "MaxiFrota",
@@ -269,6 +269,6 @@
         "url": "https://educa.cdc.org.br/",
         "icon": "School",
         "category": "Educação",
-        "department": "Recursos Humanos"
+        "department": "Educa"
     }
 ]
