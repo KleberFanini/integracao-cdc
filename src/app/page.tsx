@@ -206,6 +206,17 @@ export default function Home() {
         )}
       </button>
 
+      {/* Botão de Suporte */}
+      <a
+        href="https://wkf.ms/4cI1hYr"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-8 right-4 z-50 flex items-center gap-2 px-4 py-3 rounded-full bg-[var(--brand-red)] text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-red-700 group"
+      >
+        <MessagesSquare className="h-5 w-5 transition-transform duration-300 group-hover:rotate-12" />
+        <span className="text-sm font-medium hidden sm:inline">Suporte</span>
+      </a>
+
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 top-0 h-[520px]"
