@@ -109,6 +109,38 @@ const DEPARTMENTS = [
 ];
 ```
 
+### 2. Defina a cor e o emoji:
+
+```tsx
+const departmentColors: Record<string, string> = {
+  // ... existentes
+  "Novo Departamento": "#cor-hex",
+};
+
+const departmentEmojis: Record<string, string> = {
+  // ... existentes
+  "Novo Departamento": "📌",
+};
+```
+
+### Mudar cores do tema
+No globals.css, ajuste as variáveis:
+
+```css
+:root {
+  --background: #f5f4f2;
+  --foreground: #3d2e2a;
+  --gradient-brand: linear-gradient(135deg, #ef4444 0%, #ea580c 50%, #dc2626 100%);
+  /* ... outras cores */
+}
+
+.dark {
+  --background: #12121e;
+  --foreground: #fbfbfe;
+  /* ... cores escuras */
+}
+```
+
 ## 📦 Deploy no Easypanel
 
 ### 1. Configure o next.config.js
